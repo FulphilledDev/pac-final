@@ -10,20 +10,22 @@ const YELP_REVIEWS = [];
 // API Credentials
 const REQUEST_URL = `https://api.yelp.com/v3/businesses/patriot-air-conditioning-las-vegas/reviews`;
 const API_KEY =
-  'PzKia-0xeiEcoFE2ZKSuCpl1Oe2NyyVgSmQIoa5N8kSmXhi-DcEhpO1dfpDJH0xzXSbuB8VfhE1Q_x0XFs_BLUiXN1EaZRZH2j8E4FjXPLRjPbp0tYMMoPtW2KJRZHYx';
+  'N4sNYw3iK3kHajoDNsBjx7w_6qf0Pzyu2eSzZ7rx6Vi_8NnEbHxVFrx7wrcy9b_xsNxA5sMpQv6sXjWwgz31xRvDZpwuGL_zY0gMs3AhahWh89vGYlBEmzcIK8qeZHYx';
 
 const getYelpReviews = async () => {
   const response = await fetch(REQUEST_URL, {
     method: 'GET',
     headers: {
+      Authorization: `Bearer ${API_KEY}`,
       'Content-Type': 'application/json',
-      Authorization: `Bearer Token ${API_KEY}`,
     },
   });
 
   const data = await response.json();
   const reviews = data.reviews;
   YELP_REVIEWS.push(...reviews);
+
+  console.log(YELP_REVIEWS);
 
   return YELP_REVIEWS;
 };
@@ -33,9 +35,6 @@ const Home = () => {
     <>
       <section className='w-full md:w-3/4 mx-auto'>
         <div className='w-full'>
-          <div className='text-white font-semibold bg-red-500 px-3 py-2 w-full text-center uppercase'>
-            This page is under maintenance
-          </div>
           <div className='min-h-screen'>
             <img src={Logo} className='w-full h-full' alt='Logo' />
           </div>
@@ -94,6 +93,6 @@ const Home = () => {
   );
 };
 
-getYelpReviews();
+// getYelpReviews();
 
 export default Home;

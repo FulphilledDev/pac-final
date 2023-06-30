@@ -1,12 +1,12 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { ToastContainer } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-import NavBar from './components/Utilities/NavBar/NavBar'
-import Home from './components/Home/Home'
-import Team from './components/Team/Team'
-import Projects from './components/Projects/Projects'
-import Services from './components/Services/Services'
+import NavBar from './components/Utilities/NavBar/NavBar';
+import Home from './components/Home/Home';
+import Team from './components/Team/Team';
+import Projects from './components/Projects/Projects';
+import Plans from './components/Services/Plans';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
                 <NavBar />
                 <Routes>
                   <Route path='/' element={<Home />} exact />
-                  <Route path='/services' element={<Services />} />
+                  <Route path='/plans' element={<Plans />} />
                   <Route path='/team' element={<Team />} />
                   <Route path='/projects' element={<Projects />} />
                 </Routes>
@@ -31,7 +31,7 @@ function App() {
       </Router>
       <ToastContainer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

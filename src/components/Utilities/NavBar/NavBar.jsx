@@ -6,6 +6,7 @@ import ContactForm from '../ContactForm/ContactForm';
 const NavBar = () => {
   const LINKS = [
     { name: 'HOME', link: '/' },
+    { name: 'PLANS', link: '/plans' },
     { name: 'SERVICES', link: '/services' },
     { name: 'TEAM', link: '/team' },
     { name: 'PROJECTS', link: '/projects' },
@@ -14,7 +15,7 @@ const NavBar = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className='bg-black w-full md:w-3/4 mx-auto shadow-md py-3'>
-      <div className='md:flex items-center relative justify-between bg-black py-1 md:px-10 px-7'>
+      <div className='md:flex items-center relative justify-between bg-black py-1'>
         <div
           className='font-bold text-2xl text-white cursor-pointer flex items-center gap-3'
           style={{ zIndex: 999 }}
@@ -38,7 +39,7 @@ const NavBar = () => {
           style={{ zIndex: 9997 }}
         >
           {LINKS.map((link) => (
-            <li key={link.name} className='md:ml-8 text-lg md:my-0 my-6'>
+            <li key={link.name} className='md:ml-8 text-sm md:my-0 my-6'>
               <Link
                 to={link.link}
                 className='text-white hover:text-blue-400 duration-500'
