@@ -7,6 +7,7 @@ import Home from './components/Home/Home';
 import Team from './components/Team/Team';
 import Projects from './components/Projects/Projects';
 import Plans from './components/Services/Plans';
+import Services from './components/Services/Services';
 import Footer from './components/Utilities/Footer/Footer';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
                 <Routes>
                   <Route path='/' element={<Home />} exact />
                   <Route path='/plans' element={<Plans />} />
+                  <Route path='/services' element={<Services />} />
                   <Route path='/team' element={<Team />} />
                   <Route path='/projects' element={<Projects />} />
                 </Routes>
