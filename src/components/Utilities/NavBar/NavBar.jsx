@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import { WrenchIcon, XMarkIcon } from '@heroicons/react/24/solid'
-import Logo from '../../../assets/images/Logo.png'
-import ContactForm from '../ContactForm/ContactForm'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { WrenchIcon, XMarkIcon } from '@heroicons/react/24/solid';
+import ContactForm from '../ContactForm/ContactForm';
 
 const NavBar = () => {
   const LINKS = [
@@ -10,20 +9,20 @@ const NavBar = () => {
     { name: 'SERVICES', link: '/services' },
     { name: 'TEAM', link: '/team' },
     { name: 'PROJECTS', link: '/projects' },
-  ]
+  ];
 
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
   return (
-    <div className='bg-black w-full md:w-3/4 mx-auto shadow-md'>
+    <div className='bg-black w-full md:w-3/4 mx-auto shadow-md py-3'>
       <div className='md:flex items-center relative justify-between bg-black py-1 md:px-10 px-7'>
         <div
           className='font-bold text-2xl text-white cursor-pointer flex items-center gap-3'
           style={{ zIndex: 999 }}
         >
-          <span className=''>
+          <h3 className='font-bold'>
             {/* <FlagIcon className='h-8 w-8' /> */}
-            <img src={Logo} alt='company logo' className='h-full w-32' />
-          </span>
+            PATRIOT AIR
+          </h3>
         </div>
         <div
           onClick={() => setOpen(!open)}
@@ -52,7 +51,7 @@ const NavBar = () => {
         </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;
