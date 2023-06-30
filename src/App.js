@@ -7,6 +7,7 @@ import Home from './components/Home/Home';
 import Team from './components/Team/Team';
 import Projects from './components/Projects/Projects';
 import Plans from './components/Services/Plans';
+import Footer from './components/Utilities/Footer/Footer';
 
 function App() {
   return (
@@ -23,11 +24,11 @@ function App() {
                   <Route path='/team' element={<Team />} />
                   <Route path='/projects' element={<Projects />} />
                 </Routes>
+                <Footer />
               </main>
             </div>
           </div>
         </div>
-        {/* <Footer /> */}
       </Router>
       <ToastContainer />
     </>
