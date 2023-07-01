@@ -1,26 +1,19 @@
-import React from 'react'
+import React from 'react';
 
 const ProjectImagesList = (props) => {
   return (
     <>
       <div className='w-full md:w-4/5 mx-auto'>
-        <ul className='list-none flex gap-3 flex-row flex-wrap justify-center pb-3 md:pb-8 px-3'>
+        <div className='gap-3 grid grid-cols-6 md:grid-cols-9 xl:grid-cols-12 pb-3 '>
           {props.images.map((item) => (
-            <li
-              className='m-0 p-1 border-2 border-black bg-black rounded-md'
-              key={item.id}
-            >
-              <img
-                className='rounded-md'
-                src={`${item.image}`}
-                alt='cloudinaryProjectLink'
-              />
-            </li>
+            <div className='p-1 col-span-3 object-contain' key={item.id}>
+              <img src={`${item.image}`} alt='cloudinaryProjectLink' />
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default ProjectImagesList
+export default ProjectImagesList;
