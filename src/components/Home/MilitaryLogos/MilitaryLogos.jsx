@@ -1,16 +1,16 @@
-import React from 'react'
+import React from 'react';
 
-import './MilitaryLogos.css'
+import './MilitaryLogos.css';
 
-import AirForce from '../../../assets/images/deptAirForce.png'
-import Army from '../../../assets/images/deptArmy.png'
-import Navy from '../../../assets/images/deptNavy.png'
-import CoastGuard from '../../../assets/images/usCoastGuard.png'
-import Marines from '../../../assets/images/deptNavyUSMarineCorps.png'
+import AirForce from '../../../assets/images/deptAirForce.png';
+import Army from '../../../assets/images/deptArmy.png';
+import Navy from '../../../assets/images/deptNavy.png';
+import CoastGuard from '../../../assets/images/usCoastGuard.png';
+import Marines from '../../../assets/images/deptNavyUSMarineCorps.png';
 
 const MilitaryLogos = () => {
   return (
-    <div className='flex flex-wrap md:flex-row justify-around gap-2 mx-auto w-4/5 md:w-3/4'>
+    <div className='flex flex-wrap md:flex-row justify-around gap-2 mx-auto w-full md:w-3/4'>
       <img
         className='w-24 h-24 lg:w-32 lg:h-32'
         src={AirForce}
@@ -37,7 +37,7 @@ const MilitaryLogos = () => {
         alt='militaryBranch'
       />
     </div>
-  )
-}
+  );
+};
 
-export default MilitaryLogos
+export default MilitaryLogos;

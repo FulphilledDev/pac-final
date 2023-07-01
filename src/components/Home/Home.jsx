@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from '../../assets/images/Logo.png';
+import MilitaryLogos from './MilitaryLogos/MilitaryLogos';
 
 const YELP_REVIEWS = [];
 
@@ -47,24 +48,33 @@ const Home = () => {
               </h2>
             </div> */}
 
-            {/* <div>
-              <MilitaryLogos />
-            </div> */}
+            <div className='grid grid-cols-2 my-3 md:my-6 lg:my-12'>
+              <div className='flex flex-col justify-center my-4 md:my-12 mx-auto w-full col-span-2 lg:col-span-1'>
+                <p className='text-white text-center uppercase xs:text-[24px] sm:text-[32px] lg:text-[40px] xl:text-[48px] font-bold mb-4 md:mb-0'>
+                  No BS. Only{' '}
+                  <p className='inline-block text-red-500 xs:text-[24px] sm:text-[32px] lg:text-[40px] xl:text-[48px] font-bold underline'>
+                    Quality
+                  </p>{' '}
+                  craftsmanship.
+                </p>
+                {/* Steven Biography goes here */}
+                <p className='text-white text-center mt-0 md:mt-4 px-4 md:px-8 w-full md:w-3/4 mx-auto'>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  sit amet erat non dolor pellentesque convallis ut ut nibh.
+                  Cras consectetur neque sit amet risus luctus cursus.
+                  Suspendisse tempus non.
+                </p>
+              </div>
+              <div className='col-span-2 lg:col-span-1 flex justify-center object-cover'>
+                <img
+                  src='http://via.placeholder.com/360x360'
+                  alt='Steven Headsot'
+                />
+              </div>
+            </div>
 
-            <div className='flex flex-col justify-center my-4 md:my-12 mx-auto w-full'>
-              <h2 className='text-white text-center uppercase text-3xl md:text-5xl mb-4 md:mb-0'>
-                No BS. Only{' '}
-                <span className='text-red-500 font-[sans-serif] text-3xl md:text-5xl font-bold underline'>
-                  Quality
-                </span>{' '}
-                craftsmanship.
-              </h2>
-              <p className='text-white text-center mt-0 md:mt-4 px-4 md:px-8 w-full md:w-3/4 mx-auto'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit
-                amet erat non dolor pellentesque convallis ut ut nibh. Cras
-                consectetur neque sit amet risus luctus cursus. Suspendisse
-                tempus non.
-              </p>
+            <div className='mb-3 md:mb-6 lg:mb-12'>
+              <MilitaryLogos />
             </div>
           </div>
         </div>
