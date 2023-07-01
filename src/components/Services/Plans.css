@@ -1,3 +1,19 @@
 .swiper-slide div {
   background-color: white;
 }
+
+.swiper-container {
+  width: 480px;
+}
+
+@media screen and (min-width: 768) {
+  .swiper-container {
+    width: 768;
+  }
+}
+
+@media screen and (min-width: 1200) {
+  .swiper-container {
+    width: 1200;
+  }
+}

@@ -92,36 +92,43 @@ const Plans = () => {
     swiper.slideNext();
   };
   return (
-    <div className='w-full md:w-3/4 mx-auto mt-6'>
+    <div className='w-full md:w-3/4 mx-auto px-6 md:px-0 mt-6'>
       <Swiper
         pagination={true}
         modules={[Pagination, Navigation, Autoplay]}
         autoplay={{ delay: 10000 }}
-        slidesPerView={2}
         spaceBetween={32}
+        slidesPerView={2}
         onClick={onClick}
         breakpoint={{
           768: {
+            width: 768,
             slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          1200: {
+            width: 1200,
+            slidesPerView: 1,
+            spaceBetween: 20,
           },
         }}
       >
         {PLANS.map((plan) => (
           <>
             <SwiperSlide key={plan.id}>
-              <div className='px-4 md:px-12 mt-3 py-3'>
+              <div className='px-3 md:px-6 mt-3 py-3'>
                 <div className='w-full'>
                   {plan.id === 's1' ? (
                     <img
                       src={SilverStar}
                       alt='Silver Star'
-                      className='object-cover h-96'
+                      className='object-cover w-full h-96'
                     />
                   ) : (
                     <img
                       src={MedalOfHonor}
                       alt='Medal of Honor'
-                      className='object-cover h-96'
+                      className='object-cover w-full h-96'
                     />
                   )}
                 </div>
@@ -151,7 +158,7 @@ const Plans = () => {
                   </div>
                 </div>
 
-                <div className='my-6 min-h-[200px] lg:min-h-[120px]'>
+                <div className='my-6 lg:min-h-[175px] xl:min-h-[120px]'>
                   <h4 className='font-bold uppercase'>Description</h4>
                   <p className='text-black pb-4 font-[Roboto]'>
                     {plan.description}{' '}
