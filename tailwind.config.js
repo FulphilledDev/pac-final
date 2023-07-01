@@ -19,6 +19,28 @@ module.exports = {
       sans: ['Poppins', 'sans-serif'],
       serif: ['Courier-New', 'serif'],
     },
+    fontSize: {
+      sm: ['14px', '20px'],
+      base: ['16px', '24px'],
+      lg: ['20px', '28px'],
+      xl: ['24px', '32px'],
+      '2xl': [
+        '1.5rem',
+        {
+          lineHeight: '2rem',
+          letterSpacing: '-0.01em',
+          fontWeight: '500',
+        },
+      ],
+      '3xl': [
+        '1.875rem',
+        {
+          lineHeight: '2.25rem',
+          letterSpacing: '-0.02em',
+          fontWeight: '700',
+        },
+      ],
+    },
     extend: {
       spacing: {
         128: '32rem',
@@ -46,4 +68,4 @@ module.exports = {
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/typography'),
   ],
-}
+};

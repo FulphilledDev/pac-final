@@ -1,9 +1,5 @@
 import React from 'react';
-import MilitaryLogos from './MilitaryLogos/MilitaryLogos';
-import CarLogo from '../../assets/images/PACCarLogo.jpg';
 import Logo from '../../assets/images/Logo.png';
-
-import YelpReviews from './YelpReviews/YelpReviews';
 
 const YELP_REVIEWS = [];
 

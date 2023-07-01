@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Plans.css';
+import SilverStar from '../../assets/images/silverStar.jpg';
+import MedalOfHonor from '../../assets/images/medalOfHonor.jpg';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
@@ -30,18 +32,18 @@ const PLANS = [
     progIncluded4: 'One (1) Outdoor Coil Cleaning per year',
     progIncluded5:
       'One (1) Year parts and labor warranty provided by Patriot Air Conditioning LLC',
-    maintIncluded1: 'Check proper refrigerant charge',
-    maintIncluded2: 'Check filters and proper air flow',
-    maintIncluded3: 'Check ducting for secure connections',
+    maintIncluded1: 'Proper refrigerant charge',
+    maintIncluded2: 'Filters and proper air flow',
+    maintIncluded3: 'Ducting for secure connections',
     maintIncluded4: 'Check & Adjust Thermostat',
-    maintIncluded5: 'Inspect flue vent piping (Carbon Monoxide)',
-    maintIncluded6: 'Inspect wiring, contacts, capacitors & relays',
-    maintIncluded7: 'Inspect evaporator coil',
-    maintIncluded8: 'Inspect condensation drain',
-    maintIncluded9: 'Inspect outdoor disconnect',
-    maintIncluded10: 'Inspect condensor fan motor & blades',
-    maintIncluded11: 'Inspect evaporator fan motor & blades',
-    maintIncluded12: 'Inspect compressor',
+    maintIncluded5: 'Flue vent piping (Carbon Monoxide)',
+    maintIncluded6: 'Wiring, contacts, capacitors & relays',
+    maintIncluded7: 'Evaporator coil',
+    maintIncluded8: 'Condensation drain',
+    maintIncluded9: 'Outdoor disconnect',
+    maintIncluded10: 'Condensor fan motor & blades',
+    maintIncluded11: 'Evaporator fan motor & blades',
+    maintIncluded12: 'Compressor',
     maintIncluded13: 'Inspect & Tighten Schrader Valves',
     maintIncluded14: 'Inspect & Tighten refrigerant caps',
     note: "Silver Star Maintenance Program is for one (1) AC unit. Addition AC units may be added for service in contracts as an 'add-on'. Additional unit cost: $90 per unit.",
@@ -63,18 +65,18 @@ const PLANS = [
     progIncluded4: 'One (1) pound of refrigerant per year',
     progIncluded5:
       'Two (2) Years parts and labor warranty provided by Patriot Air Conditioning LLC',
-    maintIncluded1: 'Check proper refrigerant charge',
-    maintIncluded2: 'Check filters and proper air flow',
-    maintIncluded3: 'Check ducting for secure connections',
+    maintIncluded1: 'Proper refrigerant charge',
+    maintIncluded2: 'Filters and proper air flow',
+    maintIncluded3: 'Ducting for secure connections',
     maintIncluded4: 'Check & Adjust Thermostat',
-    maintIncluded5: 'Inspect flue vent piping (Carbon Monoxide)',
-    maintIncluded6: 'Inspect wiring, contacts, capacitors & relays',
-    maintIncluded7: 'Inspect evaporator coil',
-    maintIncluded8: 'Inspect condensation drain',
-    maintIncluded9: 'Inspect outdoor disconnect',
-    maintIncluded10: 'Inspect condensor fan motor & blades',
-    maintIncluded11: 'Inspect evaporator fan motor & blades',
-    maintIncluded12: 'Inspect compressor',
+    maintIncluded5: 'Flue vent piping (Carbon Monoxide)',
+    maintIncluded6: 'Wiring, contacts, capacitors & relays',
+    maintIncluded7: 'Evaporator coil',
+    maintIncluded8: 'Condensation drain',
+    maintIncluded9: 'Outdoor disconnect',
+    maintIncluded10: 'Condensor fan motor & blades',
+    maintIncluded11: 'Evaporator fan motor & blades',
+    maintIncluded12: 'Compressor',
     maintIncluded13: 'Inspect & Tighten Schrader Valves',
     maintIncluded14: 'Inspect & Tighten refrigerant caps',
     maintIncluded14: 'Inspect & Clean condensor coil',
@@ -90,7 +92,7 @@ const Plans = () => {
     swiper.slideNext();
   };
   return (
-    <div className='w-full md:w-3/4 mx-auto'>
+    <div className='w-full md:w-3/4 mx-auto mt-6'>
       <Swiper
         pagination={true}
         modules={[Pagination, Navigation, Autoplay]}
@@ -107,30 +109,60 @@ const Plans = () => {
         {PLANS.map((plan) => (
           <>
             <SwiperSlide key={plan.id}>
-              <div className='mb-4 md:mb-10 px-4 md:px-12 mt-3 py-3'>
-                <div className='text-center'>
-                  <h3 className='my-1'>{plan.title}</h3>
+              <div className='px-4 md:px-12 mt-3 py-3'>
+                <div className='w-full'>
+                  {plan.id === 's1' ? (
+                    <img
+                      src={SilverStar}
+                      alt='Silver Star'
+                      className='object-cover h-96'
+                    />
+                  ) : (
+                    <img
+                      src={MedalOfHonor}
+                      alt='Medal of Honor'
+                      className='object-cover h-96'
+                    />
+                  )}
                 </div>
-                <div className='w-full py-3 border border-md '>
-                  <div className='grid grid-cols-6 gap-3'>
-                    <p className='col-span-2'>
-                      {plan.costPerYear} <br /> per year
-                    </p>
+                <div className='text-center'>
+                  <h3 className='mt-3 uppercase font-bold'>{plan.title}</h3>
+                </div>
+                <div className='w-full py-3'>
+                  <div className='grid grid-cols-6 divide-x'>
+                    <h4 className='col-span-2 text-center font-bold'>
+                      {plan.costPerYear} <br />{' '}
+                      <p className='font-[Roboto] font-normal'>per year</p>
+                    </h4>
 
-                    <p className='col-span-2'>
-                      {plan.visitsPerYear} <br /> visits per year
-                    </p>
+                    <h4 className='col-span-2 text-center font-bold'>
+                      {plan.visitsPerYear} <br />{' '}
+                      <p className='font-[Roboto] font-normal'>
+                        visits per year
+                      </p>
+                    </h4>
 
-                    <p className='col-span-2'>
-                      {plan.discountOnJobs} <br /> discount on jobs
-                    </p>
+                    <h4 className='col-span-2 text-center font-bold'>
+                      {plan.discountOnJobs} <br />{' '}
+                      <p className='font-[Roboto] font-normal'>
+                        discount on jobs
+                      </p>
+                    </h4>
                   </div>
                 </div>
 
-                <p className='text-black pb-4'>{plan.description} </p>
-                <div>
-                  <h4>Member Maintenance Program Includes</h4>
-                  <ul>
+                <div className='my-6 min-h-[200px] lg:min-h-[120px]'>
+                  <h4 className='font-bold uppercase'>Description</h4>
+                  <p className='text-black pb-4 font-[Roboto]'>
+                    {plan.description}{' '}
+                  </p>
+                </div>
+
+                <div className='my-6'>
+                  <h4 className='font-bold uppercase'>
+                    Member Program Includes
+                  </h4>
+                  <ul className='list-disc pl-6'>
                     <li>{plan.progIncluded1}</li>
                     <li>{plan.progIncluded2}</li>
                     <li>{plan.progIncluded3}</li>
@@ -138,24 +170,36 @@ const Plans = () => {
                     <li>{plan.progIncluded5}</li>
                   </ul>
                 </div>
-                <div>
-                  <h4>Maintenance Includes</h4>
-                  <ul>
-                    <li>{plan.maintIncluded1}</li>
-                    <li>{plan.maintIncluded2}</li>
-                    <li>{plan.maintIncluded3}</li>
-                    <li>{plan.maintIncluded4}</li>
-                    <li>{plan.maintIncluded5}</li>
-                    <li>{plan.maintIncluded6}</li>
-                    <li>{plan.maintIncluded7}</li>
-                    <li>{plan.maintIncluded8}</li>
-                    <li>{plan.maintIncluded9}</li>
-                    <li>{plan.maintIncluded10}</li>
-                    <li>{plan.maintIncluded11}</li>
-                    <li>{plan.maintIncluded12}</li>
-                    <li>{plan.maintIncluded13}</li>
-                    <li>{plan.maintIncluded14}</li>
-                  </ul>
+                <div className='my-6'>
+                  <h4 className='font-bold uppercase'>Maintenance Includes</h4>
+                  <div className='my-3'>
+                    <h5 className='uppercase underline'>Checks</h5>
+                    <ul className='list-disc pl-6'>
+                      <li>{plan.maintIncluded1}</li>
+                      <li>{plan.maintIncluded2}</li>
+                      <li>{plan.maintIncluded3}</li>
+                      <li>{plan.maintIncluded4}</li>
+                    </ul>
+                  </div>
+                  <div className='my-3'>
+                    <h5 className='uppercase underline'>Inspections</h5>
+                    <ul className='list-disc pl-6'>
+                      <li>{plan.maintIncluded5}</li>
+                      <li>{plan.maintIncluded6}</li>
+                      <li>{plan.maintIncluded7}</li>
+                      <li>{plan.maintIncluded8}</li>
+                      <li>{plan.maintIncluded9}</li>
+                      <li>{plan.maintIncluded10}</li>
+                      <li>{plan.maintIncluded11}</li>
+                      <li>{plan.maintIncluded12}</li>
+                      <li>{plan.maintIncluded13}</li>
+                      <li>{plan.maintIncluded14}</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className='my-6'>
+                  <h4 className='uppercase font-bold'>Note</h4>
+                  <p className='font-[Roboto]'>{plan.note}</p>
                 </div>
               </div>
             </SwiperSlide>
