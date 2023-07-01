@@ -92,7 +92,7 @@ const Plans = () => {
     swiper.slideNext();
   };
   return (
-    <div className='w-full md:w-3/4 mx-auto px-6 md:px-0 mt-6'>
+    <div className='w-full md:w-3/4 mx-auto px-6 md:px-0'>
       <Swiper
         pagination={true}
         modules={[Pagination, Navigation, Autoplay]}
@@ -158,11 +158,9 @@ const Plans = () => {
                   </div>
                 </div>
 
-                <div className='my-6 lg:min-h-[175px] xl:min-h-[120px]'>
+                <div className='my-6 lg:min-h-[175px] xl:min-h-[150px]'>
                   <h4 className='font-bold uppercase'>Description</h4>
-                  <p className='text-black pb-4 font-[Roboto]'>
-                    {plan.description}{' '}
-                  </p>
+                  <p className='text-black pb-4'>{plan.description} </p>
                 </div>
 
                 <div className='my-6'>
@@ -170,11 +168,21 @@ const Plans = () => {
                     Member Program Includes
                   </h4>
                   <ul className='list-disc pl-6'>
-                    <li>{plan.progIncluded1}</li>
-                    <li>{plan.progIncluded2}</li>
-                    <li>{plan.progIncluded3}</li>
-                    <li>{plan.progIncluded4}</li>
-                    <li>{plan.progIncluded5}</li>
+                    <li>
+                      <p>{plan.progIncluded1}</p>
+                    </li>
+                    <li>
+                      <p>{plan.progIncluded2}</p>
+                    </li>
+                    <li>
+                      <p>{plan.progIncluded3}</p>
+                    </li>
+                    <li>
+                      <p>{plan.progIncluded4}</p>
+                    </li>
+                    <li>
+                      <p>{plan.progIncluded5}</p>
+                    </li>
                   </ul>
                 </div>
                 <div className='my-6'>
@@ -182,31 +190,59 @@ const Plans = () => {
                   <div className='my-3'>
                     <h5 className='uppercase underline'>Checks</h5>
                     <ul className='list-disc pl-6'>
-                      <li>{plan.maintIncluded1}</li>
-                      <li>{plan.maintIncluded2}</li>
-                      <li>{plan.maintIncluded3}</li>
-                      <li>{plan.maintIncluded4}</li>
+                      <li>
+                        <p>{plan.maintIncluded1}</p>
+                      </li>
+                      <li>
+                        <p>{plan.maintIncluded2}</p>
+                      </li>
+                      <li>
+                        <p>{plan.maintIncluded3}</p>
+                      </li>
+                      <li>
+                        <p>{plan.maintIncluded4}</p>
+                      </li>
                     </ul>
                   </div>
                   <div className='my-3'>
                     <h5 className='uppercase underline'>Inspections</h5>
                     <ul className='list-disc pl-6'>
-                      <li>{plan.maintIncluded5}</li>
-                      <li>{plan.maintIncluded6}</li>
-                      <li>{plan.maintIncluded7}</li>
-                      <li>{plan.maintIncluded8}</li>
-                      <li>{plan.maintIncluded9}</li>
-                      <li>{plan.maintIncluded10}</li>
-                      <li>{plan.maintIncluded11}</li>
-                      <li>{plan.maintIncluded12}</li>
-                      <li>{plan.maintIncluded13}</li>
-                      <li>{plan.maintIncluded14}</li>
+                      <li>
+                        <p>{plan.maintIncluded5}</p>
+                      </li>
+                      <li>
+                        <p>{plan.maintIncluded6}</p>
+                      </li>
+                      <li>
+                        <p>{plan.maintIncluded7}</p>
+                      </li>
+                      <li>
+                        <p>{plan.maintIncluded8}</p>
+                      </li>
+                      <li>
+                        <p>{plan.maintIncluded9}</p>
+                      </li>
+                      <li>
+                        <p>{plan.maintIncluded10}</p>
+                      </li>
+                      <li>
+                        <p>{plan.maintIncluded11}</p>
+                      </li>
+                      <li>
+                        <p>{plan.maintIncluded12}</p>
+                      </li>
+                      <li>
+                        <p>{plan.maintIncluded13}</p>
+                      </li>
+                      <li>
+                        <p>{plan.maintIncluded14}</p>
+                      </li>
                     </ul>
                   </div>
                 </div>
                 <div className='my-6'>
                   <h4 className='uppercase font-bold'>Note</h4>
-                  <p className='font-[Roboto]'>{plan.note}</p>
+                  <p>{plan.note}</p>
                 </div>
               </div>
             </SwiperSlide>
