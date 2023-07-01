@@ -1,16 +1,16 @@
-import React from 'react'
-import './TeamMembers.css'
+import React from 'react';
+import './TeamMembers.css';
 
-import h1 from '../../assets/images/headshot1.jpg'
-import h2 from '../../assets/images/headshot2.jpg'
-import h3 from '../../assets/images/headshot3.jpg'
-import h4 from '../../assets/images/headshot4.jpg'
-import Logo from '../../assets/images/Logo.png'
+import h1 from '../../assets/images/headshot1.jpg';
+import h2 from '../../assets/images/headshot2.jpg';
+import h3 from '../../assets/images/headshot3.jpg';
+import h4 from '../../assets/images/headshot4.jpg';
+import Logo from '../../assets/images/Logo.png';
 
-import army from '../../assets/images/deptArmy.png'
-import airForce from '../../assets/images/deptAirForce.png'
-import navy from '../../assets/images/deptNavy.png'
-import marines from '../../assets/images/deptNavyUSMarineCorps.png'
+import army from '../../assets/images/deptArmy.png';
+import airForce from '../../assets/images/deptAirForce.png';
+import navy from '../../assets/images/deptNavy.png';
+import marines from '../../assets/images/deptNavyUSMarineCorps.png';
 
 const TeamMembers = (props) => {
   // Map through team members and display each information as a card
@@ -19,17 +19,14 @@ const TeamMembers = (props) => {
       <h2 className='teamMember-list__fallback'>
         This page is currently under maintenance.
       </h2>
-    )
+    );
   }
 
   return (
     <>
-      <ul
-        className='list-none pb-8 md:pb-12 px-4 flex flex-wrap justify-center gap-8'
-        id='topOfList'
-      >
+      <ul className='list-none pb-8 md:pb-12 px-4 flex flex-wrap justify-center gap-8'>
         {props.teamMembers.map((teamMember, index) => (
-          <li className='min-w-1/4 hover:cursor-pointer hover:scale-105 duration-1000 border-black border-1 rounded-md  shadow-lg w-full lg:w-3/4 xl:w-2/5'>
+          <li className='min-w-1/4 border-black border-1 rounded-md  shadow-lg w-full lg:w-3/4 xl:w-2/5'>
             <div className='rounded-md relative bg-gradient-to-tr from-zinc-100 to-zinc-400 bg-brightness-25'>
               <div className='px-4 py-4 flex flex-col gap-4 my-1 relative'>
                 <div className='w-full'>
@@ -120,7 +117,7 @@ const TeamMembers = (props) => {
         </button>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default TeamMembers
+export default TeamMembers;

@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import TeamMembers from './TeamMembers'
+import React, { useState } from 'react';
+import TeamMembers from './TeamMembers';
 
 const INITIAL_TEAM = [
   {
@@ -46,31 +46,30 @@ const INITIAL_TEAM = [
     rank: 'EMPLOYEE',
     bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan sapien elit, nec dignissim velit tincidunt non. Cras maximus, risus eu commodo placerat, lorem magna accumsan purus, id tincidunt risus nunc sed massa. Duis in hendrerit magna. Fusce venenatis venenatis nulla ac consequat.',
   },
-]
+];
 
 const Team = () => {
-  const [team] = useState(INITIAL_TEAM)
+  const [team] = useState(INITIAL_TEAM);
 
   return (
     <>
       <section className='bg-white w-full md:w-3/4 min-h-screen mx-auto my-0'>
-        {team.length >= 1 && (
-          // team.length === 0 ||
-          // (team.length === null
-          <div className='text-white font-semibold bg-red-500 px-3 py-2 w-full text-center uppercase'>
-            This page is under maintenance.
-          </div>
-        )}
         <div className='text-black flex flex-col items-center py-8 gap-4'>
-          <h1 className='text-4xl md:text-5xl font-extrabold mb-2'>
+          <h1
+            className='text-4xl md:text-5xl font-extrabold mb-2'
+            id='topOfList'
+          >
             OUR PLATOON
           </h1>
           <p className='text-center w-full md:w-3/4 mx-4 md:mx-0 px-4 md:px-0'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-            eveniet enim commodi, iusto nulla molestiae odit consequatur quod
-            esse, magni laborum quasi! Dolores voluptas quaerat neque eos
-            deleniti omnis enim!
+            "This is my team. There are many like it, but this one is mine.
+            <br />
+            My team is my best friend. Our profession is our life. We must
+            master it, as we must master our life."
           </p>
+          {/* <p className='text-center w-full md:w-3/4 mx-4 md:mx-0 px-4 md:px-0'>
+            
+          </p> */}
         </div>
         {team.length >= 1 && (
           <div className='mt-8 md:mt-12'>
@@ -79,7 +78,7 @@ const Team = () => {
         )}
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Team
+export default Team;
