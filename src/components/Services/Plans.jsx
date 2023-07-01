@@ -62,8 +62,8 @@ const PLANS = [
     progIncluded2: 'Free service/diagnosis',
     progIncluded3: '10% discount for additional services',
     progIncluded4: 'One (1) Outdoor Coil Cleaning per year',
-    progIncluded4: 'One (1) pound of refrigerant per year',
-    progIncluded5:
+    progIncluded5: 'One (1) pound of refrigerant per year',
+    progIncluded6:
       'Two (2) Years parts and labor warranty provided by Patriot Air Conditioning LLC',
     maintIncluded1: 'Proper refrigerant charge',
     maintIncluded2: 'Filters and proper air flow',
@@ -79,7 +79,7 @@ const PLANS = [
     maintIncluded12: 'Compressor',
     maintIncluded13: 'Inspect & Tighten Schrader Valves',
     maintIncluded14: 'Inspect & Tighten refrigerant caps',
-    maintIncluded14: 'Inspect & Clean condensor coil',
+    maintIncluded15: 'Inspect & Clean condensor coil',
     note: "Medal of Honor Maintenance Program is for one (1) AC unit. Addition AC units may be added for service in contracts as an 'add-on'. Additional unit cost: $190 per unit.",
     addNote: 'Filter change out - $17 per filter per visit',
   },
@@ -183,6 +183,11 @@ const Plans = () => {
                     <li>
                       <p>{plan.progIncluded5}</p>
                     </li>
+                    {plan.progIncluded6 && (
+                      <li>
+                        <p>{plan.progIncluded6}</p>
+                      </li>
+                    )}
                   </ul>
                 </div>
                 <div className='my-6'>
@@ -237,6 +242,11 @@ const Plans = () => {
                       <li>
                         <p>{plan.maintIncluded14}</p>
                       </li>
+                      {plan.maintIncluded15 && (
+                        <li>
+                          <p>{plan.maintIncluded15}</p>
+                        </li>
+                      )}
                     </ul>
                   </div>
                 </div>
