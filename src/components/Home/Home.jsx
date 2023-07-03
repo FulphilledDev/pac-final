@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from '../../assets/images/Logo.png';
+import LogoAni from '../../assets/images/LogoAni.mp4';
 import MilitaryLogos from './MilitaryLogos/MilitaryLogos';
 
 const YELP_REVIEWS = [];
@@ -34,6 +35,12 @@ const Home = () => {
         <div className='w-full'>
           <div className='min-h-screen'>
             <img src={Logo} className='w-full h-full' alt='Logo' />
+            {/* <video autoplay='true' loop='true'>
+              <source
+                src='../../assets/images/LogoAni.mp4'
+                type='video/mp4'
+              ></source>
+            </video> */}
           </div>
 
           <div className='flex flex-col gap-4'>
