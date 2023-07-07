@@ -55,10 +55,7 @@ const Team = () => {
     <>
       <section className='bg-white w-full md:w-3/4 min-h-screen mx-auto my-0'>
         <div className='text-black flex flex-col items-center py-8 gap-4'>
-          <h1
-            className='text-4xl md:text-5xl font-extrabold mb-2'
-            id='topOfList'
-          >
+          <h1 className='text-4xl md:text-5xl font-extrabold mb-2'>
             OUR PLATOON
           </h1>
           <p className='text-center w-full md:w-3/4 mx-4 md:mx-0 px-4 md:px-0'>

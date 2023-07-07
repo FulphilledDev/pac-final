@@ -92,8 +92,8 @@ const Plans = () => {
     swiper.slideNext();
   };
   return (
-    <div className='w-full md:w-3/4 mx-auto px-6 md:px-0'>
-      <Swiper
+    <div className='w-full md:w-3/4 mx-auto px-6 md:px-0 grid grid-cols-8 lg:grid-cols-12'>
+      {/* <Swiper
         pagination={true}
         modules={[Pagination, Navigation, Autoplay]}
         autoplay={{ delay: 10000 }}
@@ -112,153 +112,150 @@ const Plans = () => {
             spaceBetween: 20,
           },
         }}
-      >
-        {PLANS.map((plan) => (
-          <>
-            <SwiperSlide key={plan.id}>
-              <div className='px-3 md:px-6 mt-3 py-3'>
-                <div className='w-full'>
-                  {plan.id === 's1' ? (
-                    <img
-                      src={SilverStar}
-                      alt='Silver Star'
-                      className='object-cover w-full h-96'
-                    />
-                  ) : (
-                    <img
-                      src={MedalOfHonor}
-                      alt='Medal of Honor'
-                      className='object-cover w-full h-96'
-                    />
-                  )}
-                </div>
-                <div className='text-center'>
-                  <h3 className='mt-3 uppercase font-bold'>{plan.title}</h3>
-                </div>
-                <div className='w-full py-3'>
-                  <div className='grid grid-cols-6 divide-x'>
-                    <h4 className='col-span-2 text-center font-bold'>
-                      {plan.costPerYear} <br />{' '}
-                      <p className='font-[Roboto] font-normal'>per year</p>
-                    </h4>
+      > */}
+      {PLANS.map((plan) => (
+        <>
+          {/* <SwiperSlide key={plan.id}> */}
+          <div
+            className='col-span-8 lg:col-span-6 px-3 md:px-6 mt-3 py-3 bg-white mx-6'
+            key={plan.id}
+          >
+            <div className='w-full'>
+              {plan.id === 's1' ? (
+                <img
+                  src={SilverStar}
+                  alt='Silver Star'
+                  className='object-cover w-full h-96'
+                />
+              ) : (
+                <img
+                  src={MedalOfHonor}
+                  alt='Medal of Honor'
+                  className='object-cover w-full h-96'
+                />
+              )}
+            </div>
+            <div className='text-center'>
+              <h3 className='mt-3 uppercase font-bold'>{plan.title}</h3>
+            </div>
+            <div className='w-full py-3'>
+              <div className='grid grid-cols-6 divide-x'>
+                <h4 className='col-span-2 text-center font-bold'>
+                  {plan.costPerYear} <br />{' '}
+                  <p className='font-[Roboto] font-normal'>per year</p>
+                </h4>
 
-                    <h4 className='col-span-2 text-center font-bold'>
-                      {plan.visitsPerYear} <br />{' '}
-                      <p className='font-[Roboto] font-normal'>
-                        visits per year
-                      </p>
-                    </h4>
+                <h4 className='col-span-2 text-center font-bold'>
+                  {plan.visitsPerYear} <br />{' '}
+                  <p className='font-[Roboto] font-normal'>visits per year</p>
+                </h4>
 
-                    <h4 className='col-span-2 text-center font-bold'>
-                      {plan.discountOnJobs} <br />{' '}
-                      <p className='font-[Roboto] font-normal'>
-                        discount on jobs
-                      </p>
-                    </h4>
-                  </div>
-                </div>
-
-                <div className='my-6 lg:min-h-[175px] xl:min-h-[150px]'>
-                  <h4 className='font-bold uppercase'>Description</h4>
-                  <p className='text-black pb-4'>{plan.description} </p>
-                </div>
-
-                <div className='my-6'>
-                  <h4 className='font-bold uppercase'>
-                    Member Program Includes
-                  </h4>
-                  <ul className='list-disc pl-6'>
-                    <li>
-                      <p>{plan.progIncluded1}</p>
-                    </li>
-                    <li>
-                      <p>{plan.progIncluded2}</p>
-                    </li>
-                    <li>
-                      <p>{plan.progIncluded3}</p>
-                    </li>
-                    <li>
-                      <p>{plan.progIncluded4}</p>
-                    </li>
-                    <li>
-                      <p>{plan.progIncluded5}</p>
-                    </li>
-                    {plan.progIncluded6 && (
-                      <li>
-                        <p>{plan.progIncluded6}</p>
-                      </li>
-                    )}
-                  </ul>
-                </div>
-                <div className='my-6'>
-                  <h4 className='font-bold uppercase'>Maintenance Includes</h4>
-                  <div className='my-3'>
-                    <h5 className='uppercase underline'>Checks</h5>
-                    <ul className='list-disc pl-6'>
-                      <li>
-                        <p>{plan.maintIncluded1}</p>
-                      </li>
-                      <li>
-                        <p>{plan.maintIncluded2}</p>
-                      </li>
-                      <li>
-                        <p>{plan.maintIncluded3}</p>
-                      </li>
-                      <li>
-                        <p>{plan.maintIncluded4}</p>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className='my-3'>
-                    <h5 className='uppercase underline'>Inspections</h5>
-                    <ul className='list-disc pl-6'>
-                      <li>
-                        <p>{plan.maintIncluded5}</p>
-                      </li>
-                      <li>
-                        <p>{plan.maintIncluded6}</p>
-                      </li>
-                      <li>
-                        <p>{plan.maintIncluded7}</p>
-                      </li>
-                      <li>
-                        <p>{plan.maintIncluded8}</p>
-                      </li>
-                      <li>
-                        <p>{plan.maintIncluded9}</p>
-                      </li>
-                      <li>
-                        <p>{plan.maintIncluded10}</p>
-                      </li>
-                      <li>
-                        <p>{plan.maintIncluded11}</p>
-                      </li>
-                      <li>
-                        <p>{plan.maintIncluded12}</p>
-                      </li>
-                      <li>
-                        <p>{plan.maintIncluded13}</p>
-                      </li>
-                      <li>
-                        <p>{plan.maintIncluded14}</p>
-                      </li>
-                      {plan.maintIncluded15 && (
-                        <li>
-                          <p>{plan.maintIncluded15}</p>
-                        </li>
-                      )}
-                    </ul>
-                  </div>
-                </div>
-                <div className='my-6'>
-                  <h4 className='uppercase font-bold'>Note</h4>
-                  <p>{plan.note}</p>
-                </div>
+                <h4 className='col-span-2 text-center font-bold'>
+                  {plan.discountOnJobs} <br />{' '}
+                  <p className='font-[Roboto] font-normal'>discount on jobs</p>
+                </h4>
               </div>
-            </SwiperSlide>
-          </>
-        ))}
-      </Swiper>
+            </div>
+
+            <div className='my-6 lg:min-h-[175px] xl:min-h-[150px]'>
+              <h4 className='font-bold uppercase'>Description</h4>
+              <p className='text-black pb-4'>{plan.description} </p>
+            </div>
+
+            <div className='my-6'>
+              <h4 className='font-bold uppercase'>Member Program Includes</h4>
+              <ul className='list-disc pl-6'>
+                <li>
+                  <p>{plan.progIncluded1}</p>
+                </li>
+                <li>
+                  <p>{plan.progIncluded2}</p>
+                </li>
+                <li>
+                  <p>{plan.progIncluded3}</p>
+                </li>
+                <li>
+                  <p>{plan.progIncluded4}</p>
+                </li>
+                <li>
+                  <p>{plan.progIncluded5}</p>
+                </li>
+                {plan.progIncluded6 && (
+                  <li>
+                    <p>{plan.progIncluded6}</p>
+                  </li>
+                )}
+              </ul>
+            </div>
+            <div className='my-6'>
+              <h4 className='font-bold uppercase'>Maintenance Includes</h4>
+              <div className='my-3'>
+                <h5 className='uppercase underline'>Checks</h5>
+                <ul className='list-disc pl-6'>
+                  <li>
+                    <p>{plan.maintIncluded1}</p>
+                  </li>
+                  <li>
+                    <p>{plan.maintIncluded2}</p>
+                  </li>
+                  <li>
+                    <p>{plan.maintIncluded3}</p>
+                  </li>
+                  <li>
+                    <p>{plan.maintIncluded4}</p>
+                  </li>
+                </ul>
+              </div>
+              <div className='my-3'>
+                <h5 className='uppercase underline'>Inspections</h5>
+                <ul className='list-disc pl-6'>
+                  <li>
+                    <p>{plan.maintIncluded5}</p>
+                  </li>
+                  <li>
+                    <p>{plan.maintIncluded6}</p>
+                  </li>
+                  <li>
+                    <p>{plan.maintIncluded7}</p>
+                  </li>
+                  <li>
+                    <p>{plan.maintIncluded8}</p>
+                  </li>
+                  <li>
+                    <p>{plan.maintIncluded9}</p>
+                  </li>
+                  <li>
+                    <p>{plan.maintIncluded10}</p>
+                  </li>
+                  <li>
+                    <p>{plan.maintIncluded11}</p>
+                  </li>
+                  <li>
+                    <p>{plan.maintIncluded12}</p>
+                  </li>
+                  <li>
+                    <p>{plan.maintIncluded13}</p>
+                  </li>
+                  <li>
+                    <p>{plan.maintIncluded14}</p>
+                  </li>
+                  {plan.maintIncluded15 && (
+                    <li>
+                      <p>{plan.maintIncluded15}</p>
+                    </li>
+                  )}
+                </ul>
+              </div>
+            </div>
+            <div className='my-6'>
+              <h4 className='uppercase font-bold'>Note</h4>
+              <p>{plan.note}</p>
+            </div>
+          </div>
+          {/* </SwiperSlide> */}
+        </>
+      ))}
+      {/* </Swiper> */}
     </div>
   );
 };

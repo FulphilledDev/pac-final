@@ -14,7 +14,10 @@ const NavBar = () => {
 
   const [open, setOpen] = useState(false);
   return (
-    <div className='bg-black w-full md:w-3/4 mx-auto shadow-md py-3'>
+    <div
+      className='bg-black w-full md:w-3/4 mx-auto shadow-md py-3'
+      id='topOfList'
+    >
       <div className='md:flex items-center relative justify-between bg-black py-1'>
         <div
           className='font-bold text-2xl text-white cursor-pointer flex items-center gap-3'

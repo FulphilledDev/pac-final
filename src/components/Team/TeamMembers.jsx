@@ -111,11 +111,6 @@ const TeamMembers = (props) => {
           </li>
         ))}
       </ul>
-      <div className='flex flex-row justify-center pb-8'>
-        <button className='hover:underline'>
-          <a href='#topOfList'> Back to Top</a>
-        </button>
-      </div>
     </>
   );
 };
