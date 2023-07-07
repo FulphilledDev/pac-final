@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Logo from '../../assets/images/Logo.png';
 
 const Services = () => {
@@ -99,6 +100,24 @@ const Services = () => {
               services and plans for all types of air conditioners. With our
               help, you can prevent the hassle and the headache of huge repairs
               and break-downs.
+            </p>
+          </div>
+          <div className='px-3'>
+            <h3 className='uppercase font-bold underline my-5'>CUSTOM JOBS</h3>
+            <p className='mb-3'>
+              Maintenance is simple, but custom jobs is what we specialize in.
+              We offer custom jobs because we want to cut the bullshit while
+              tailoring our services to your specific needs. To us, you are{' '}
+              <bold className='font-bold text-2xl leading-3'>NOT</bold> just
+              another number on a spreadsheet. Our custom jobs range in size
+              from residential to commercial buildings. Check out some of our
+              work{' '}
+              <Link
+                to='/projects'
+                className='text-blue-600 text-2xl font-bold uppercase hover:text-blue-800 hover:underline leading-3'
+              >
+                here
+              </Link>
             </p>
           </div>
         </div>
