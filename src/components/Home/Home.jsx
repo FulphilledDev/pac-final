@@ -20,7 +20,6 @@ const getYelpReviews = async () => {
       'Content-Type': 'application/json',
     },
   });
-
   const data = await response.json();
   const reviews = data.reviews;
   YELP_REVIEWS.push(...reviews);
@@ -30,11 +29,9 @@ const getYelpReviews = async () => {
   return YELP_REVIEWS;
 };
 
-const Home = () => {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+getYelpReviews();
 
+const Home = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -238,10 +235,10 @@ const Home = () => {
           <div>
             {YELP_REVIEWS.map((review) => (
               <>
-                <span>{review.url}</span>
-                <span>{review.text}</span>
-                <span>{review.rating}</span>
-                <span>{review.user.name}</span>
+                <div>{review.url}</div>
+                <div>{review.text}</div>
+                <div>{review.rating}</div>
+                <div>{review.user.name}</div>
               </>
             ))}
           </div>
