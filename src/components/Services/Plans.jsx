@@ -1,20 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Plans.css';
 import SilverStar from '../../assets/images/silverStar.jpg';
 import MedalOfHonor from '../../assets/images/medalOfHonor.jpg';
-
-// Import Swiper React components
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/bundle';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import 'swiper/css/autoplay';
-
-// import required modules
-import { Pagination, Navigation, Autoplay } from 'swiper';
 
 const PLANS = [
   {
@@ -86,33 +73,8 @@ const PLANS = [
 ];
 
 const Plans = () => {
-  const swiper = useSwiper();
-
-  const onClick = () => {
-    swiper.slideNext();
-  };
   return (
     <div className='w-full md:w-3/4 mx-auto px-6 md:px-0 grid grid-cols-8 lg:grid-cols-12'>
-      {/* <Swiper
-        pagination={true}
-        modules={[Pagination, Navigation, Autoplay]}
-        autoplay={{ delay: 10000 }}
-        spaceBetween={32}
-        slidesPerView={2}
-        onClick={onClick}
-        breakpoint={{
-          768: {
-            width: 768,
-            slidesPerView: 1,
-            spaceBetween: 20,
-          },
-          1200: {
-            width: 1200,
-            slidesPerView: 1,
-            spaceBetween: 20,
-          },
-        }}
-      > */}
       {PLANS.map((plan) => (
         <>
           {/* <SwiperSlide key={plan.id}> */}
@@ -252,10 +214,8 @@ const Plans = () => {
               <p>{plan.note}</p>
             </div>
           </div>
-          {/* </SwiperSlide> */}
         </>
       ))}
-      {/* </Swiper> */}
     </div>
   );
 };

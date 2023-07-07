@@ -29,7 +29,7 @@ const getYelpReviews = async () => {
   return YELP_REVIEWS;
 };
 
-getYelpReviews();
+// getYelpReviews();
 
 const Home = () => {
   const form = useRef();
@@ -69,17 +69,6 @@ const Home = () => {
           </div>
 
           <div className='flex flex-col gap-4'>
-            {/* <h1 className='text-center text-white font-serif font-extrabold text-5xl md:text-6xl lg:text-8xl pt-16'>
-              PATRIOT AIR <br />
-              CONDITIONING <br />
-            </h1> */}
-            {/* <div className='container w-1/2 lg:w-1/3'>
-              <h2 className='text-center w-content uppercase font-sans font-extrabold text-2xl md:text-4xl transform -rotate-6  border border-red-700 border-2 px-2 py-1 relative left-128 bottom-96'>
-                NO BS. Only <h2 className='text-red-700'>quality</h2>{' '}
-                craftsmanship
-              </h2>
-            </div> */}
-
             <div className='grid grid-cols-2 my-3 md:my-6 lg:my-12'>
               <div className='flex flex-col justify-center my-4 md:my-12 mx-auto w-full col-span-2 lg:col-span-1'>
                 <p className='text-white text-center uppercase xs:text-[24px] sm:text-[32px] lg:text-[40px] xl:text-[48px] font-bold mb-4 md:mb-0'>
@@ -106,7 +95,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className='w-full mx-3 md:mx-auto lg:w-3/5 mb-12'>
+        <div className='w-full mx-3 md:mx-auto lg:w-4/5 mb-12'>
           <div className='w-full text-white'>
             <div className='flex flex-col flex-none items-center'>
               <div className='w-full px-0 md:px-2 py-3 flex flex-col items-center'>
@@ -128,7 +117,7 @@ const Home = () => {
                 /> */}
                 <form
                   ref={form}
-                  className='mt-8 px-1 py-2 grid grid-cols-8 lg:grid-cols-12 gap-4 w-full lg:w-4/5'
+                  className='mt-8 px-1 py-2 grid grid-cols-8 lg:grid-cols-12 gap-4 w-4/5 lg:w-full xl:w-4/5'
                   onSubmit={sendEmail}
                 >
                   <div className='hidden'>
@@ -138,7 +127,7 @@ const Home = () => {
                       defaultValue='Ana & Steven'
                     />
                   </div>
-                  <div className='col-span-8 md:col-span-6 flex flex-col '>
+                  <div className='col-span-8 lg:col-span-6 flex flex-col '>
                     <label htmlFor=''>First Name</label>
                     <input
                       className='text-black px-3 py-2 border-2 border-white focus:outline-none focus:border-blue-600 focus:ring-blue-600'
@@ -148,7 +137,7 @@ const Home = () => {
                       required
                     />
                   </div>
-                  <div className='col-span-8 md:col-span-6 flex flex-col '>
+                  <div className='col-span-8 lg:col-span-6 flex flex-col '>
                     <label htmlFor=''>Last Name</label>
                     <input
                       className='text-black px-3 py-2 border-2 border-white focus:outline-none focus:border-blue-600 focus:ring-blue-600'
@@ -158,7 +147,7 @@ const Home = () => {
                       required
                     />
                   </div>
-                  <div className='col-span-8 md:col-span-6 flex flex-col '>
+                  <div className='col-span-8 lg:col-span-6 flex flex-col '>
                     <label htmlFor=''>Email</label>
                     <input
                       className='text-black px-3 py-2 border-2 border-white focus:outline-none focus:border-blue-600 focus:ring-blue-600'
@@ -167,7 +156,7 @@ const Home = () => {
                       required
                     />
                   </div>
-                  <div className='col-span-8 md:col-span-6 flex flex-col '>
+                  <div className='col-span-8 lg:col-span-6 flex flex-col '>
                     <label htmlFor=''>Phone Number</label>
                     <input
                       className='text-black px-3 py-2 border-2 border-white focus:outline-none focus:border-blue-600 focus:ring-blue-600'
@@ -177,7 +166,7 @@ const Home = () => {
                       required
                     />
                   </div>
-                  <div className='col-span-8 md:col-span-6 flex flex-col lg:col-start-3 lg:col-end-11'>
+                  <div className='col-span-8 lg:col-span-6 flex flex-col lg:col-start-3 lg:col-end-11'>
                     <label htmlFor=''>Subject</label>
                     <select
                       className='text-black px-3 py-2.5 border-2 border-white focus:outline-none focus:border-blue-600 focus:ring-blue-600'

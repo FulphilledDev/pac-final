@@ -9,7 +9,6 @@ import Projects from './components/Projects/Projects';
 import Plans from './components/Services/Plans';
 import Services from './components/Services/Services';
 import Footer from './components/Utilities/Footer/Footer';
-import grayCamo from './assets/images/grayCamo.png';
 
 function App() {
   return (
