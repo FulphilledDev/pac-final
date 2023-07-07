@@ -9,6 +9,7 @@ import Projects from './components/Projects/Projects';
 import Plans from './components/Services/Plans';
 import Services from './components/Services/Services';
 import Footer from './components/Utilities/Footer/Footer';
+import grayCamo from './assets/images/grayCamo.png';
 
 function App() {
   return (
@@ -16,8 +17,8 @@ function App() {
       <Router>
         <div className='container-2xl h-full mx-auto'>
           <div className='mx-auto h-full max-w-7x1 '>
-            <div className='bg-black h-full lg:w-full grid grid-rows-[92px_1fr] '>
-              <main className='mx-auto absolute py-0 max-w-7xl px-0 md:px-6 sm:py-4 lg:px-8 w-full overflow-scroll'>
+            <div className='h-full lg:w-full grid grid-rows-[92px_1fr]'>
+              <main className='mx-auto absolute py-0 max-w-7xl px-0 md:px-6 sm:py-4 lg:px-8 w-full overflow-y-scroll'>
                 <NavBar />
                 <Routes>
                   <Route path='/' element={<Home />} exact />
