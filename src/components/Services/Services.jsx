@@ -119,7 +119,7 @@ const Services = () => {
               unit(s) are ready for the upcoming season.
             </p>
             <div>
-              <h5 className='uppercase font-semibold my-6'>
+              <h5 className='uppercase font-semibold mt-6'>
                 Patriot Air Conditioning plan details
               </h5>
               <div>
@@ -173,6 +173,56 @@ const Services = () => {
                     <p>Inspect & Clean Condensor Coil</p>
                   </li>
                 </ul>
+              </div>
+              <div>
+                <h4 className='font-[Courier New] my-3'>
+                  Bi-annual AC check-ups included with Maintenance Plans
+                  starting from{' '}
+                  <bold className='italic text-3xl'>$190/year</bold> !
+                </h4>
+                <p>
+                  Includes one PRE-PAID visit per semester by our Certified
+                  Technicians.
+                </p>
+                <p>
+                  <bold className='font-bold text-2xl'>*DOES NOT</bold> include
+                  any additional services that are not included in the initial
+                  plan.
+                </p>
+                <div className='my-3'>
+                  <ul className='list-disc pl-6 mb-3'>
+                    <li>
+                      <p>
+                        <bold className='font-bold text-2xl'>Priority</bold>{' '}
+                        Appointments and Scheduling: Same Day Service or 24 hour
+                        notice
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <bold className='font-bold text-2xl'>
+                          Up to 2 Years
+                        </bold>{' '}
+                        Parts and Labor warranty provided by Patriot Air
+                        Conditioning LLC
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <bold className='font-bold text-2xl'>
+                          Up to 10% discount
+                        </bold>{' '}
+                        off additional services
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <bold className='font-bold text-2xl'>Bi-Annual</bold>{' '}
+                        HVAC Maintenance Visits
+                      </p>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div className='px-3'>
