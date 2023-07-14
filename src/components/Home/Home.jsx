@@ -16,8 +16,8 @@ const getYelpReviews = async () => {
   const response = await fetch(REQUEST_URL, {
     method: 'GET',
     headers: {
-      Authorization: `Bearer ${API_KEY}`,
-      'Content-Type': 'application/json',
+      Authorization: `Bearer N4sNYw3iK3kHajoDNsBjx7w_6qf0Pzyu2eSzZ7rx6Vi_8NnEbHxVFrx7wrcy9b_xsNxA5sMpQv6sXjWwgz31xRvDZpwuGL_zY0gMs3AhahWh89vGYlBEmzcIK8qeZHYx`,
+      accept: 'application/json',
     },
   });
   const data = await response.json();
@@ -86,7 +86,11 @@ const Home = () => {
                 </p>
               </div>
               <div className='col-span-2 lg:col-span-1 flex justify-center object-cover'>
-                <img src={BioDuoPhoto} alt='Steven Headsot' />
+                <img
+                  src={BioDuoPhoto}
+                  alt='Steven Headsot'
+                  className='object-cover'
+                />
               </div>
             </div>
 
@@ -221,7 +225,7 @@ const Home = () => {
             Our Reputation
           </h2>
           {/* <YelpReviews /> */}
-          <div>
+          {/* <div>
             {YELP_REVIEWS.map((review) => (
               <>
                 <div>{review.url}</div>
@@ -230,7 +234,7 @@ const Home = () => {
                 <div>{review.user.name}</div>
               </>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
     </>
