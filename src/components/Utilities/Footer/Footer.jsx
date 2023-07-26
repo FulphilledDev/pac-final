@@ -13,11 +13,11 @@ const Footer = () => {
         SEND EMAIL
       </button> */}
       </div>
-      <div className='flex flex-row justify-center pb-8 text-white hover:underline'>
+      {/* <div className='flex flex-row justify-center pb-8 text-white hover:underline'>
         <button className='hover:underline'>
           <a href='#topOfList'> Back to Top</a>
         </button>
-      </div>
+      </div> */}
     </>
   );
 };

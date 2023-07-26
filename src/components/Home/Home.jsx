@@ -220,12 +220,12 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className='bg-white mt-0 md:py-8'>
+        {/* <div className='bg-white mt-0 md:py-8'>
           <h2 className='text-center pt-8 text-black text-3xl md:text-5xl underline uppercase font-extrabold mb-4 md:mb-8'>
             Our Reputation
           </h2>
-          {/* <YelpReviews /> */}
-          {/* <div>
+          <YelpReviews />
+          <div>
             {YELP_REVIEWS.map((review) => (
               <>
                 <div>{review.url}</div>
@@ -234,8 +234,8 @@ const Home = () => {
                 <div>{review.user.name}</div>
               </>
             ))}
-          </div> */}
-        </div>
+          </div>
+        </div> */}
       </section>
     </>
   );
