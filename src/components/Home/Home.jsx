@@ -5,32 +5,6 @@ import BioDuoPhoto from '../../assets/images/BioDuoPhoto.png';
 import MilitaryLogos from './MilitaryLogos/MilitaryLogos';
 import emailjs from '@emailjs/browser';
 
-const YELP_REVIEWS = [];
-
-// API Credentials
-const REQUEST_URL = `https://api.yelp.com/v3/businesses/patriot-air-conditioning-las-vegas/reviews`;
-const API_KEY =
-  'N4sNYw3iK3kHajoDNsBjx7w_6qf0Pzyu2eSzZ7rx6Vi_8NnEbHxVFrx7wrcy9b_xsNxA5sMpQv6sXjWwgz31xRvDZpwuGL_zY0gMs3AhahWh89vGYlBEmzcIK8qeZHYx';
-
-const getYelpReviews = async () => {
-  const response = await fetch(REQUEST_URL, {
-    method: 'GET',
-    headers: {
-      Authorization: `Bearer N4sNYw3iK3kHajoDNsBjx7w_6qf0Pzyu2eSzZ7rx6Vi_8NnEbHxVFrx7wrcy9b_xsNxA5sMpQv6sXjWwgz31xRvDZpwuGL_zY0gMs3AhahWh89vGYlBEmzcIK8qeZHYx`,
-      accept: 'application/json',
-    },
-  });
-  const data = await response.json();
-  const reviews = data.reviews;
-  YELP_REVIEWS.push(...reviews);
-
-  console.log(YELP_REVIEWS);
-
-  return YELP_REVIEWS;
-};
-
-// getYelpReviews();
-
 const Home = () => {
   const form = useRef();
 
@@ -220,22 +194,25 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {/* <div className='bg-white mt-0 md:py-8'>
+        <div
+          className='bg-white mt-0 md:py-8'
+          style={{ maxWidth: '1100px', margin: 'auto' }}
+        >
           <h2 className='text-center pt-8 text-black text-3xl md:text-5xl underline uppercase font-extrabold mb-4 md:mb-8'>
             Our Reputation
           </h2>
-          <YelpReviews />
-          <div>
-            {YELP_REVIEWS.map((review) => (
-              <>
-                <div>{review.url}</div>
-                <div>{review.text}</div>
-                <div>{review.rating}</div>
-                <div>{review.user.name}</div>
-              </>
-            ))}
+          <div style={{ padding: '10px' }}>
+            <iframe
+              src='https://widget.taggbox.com/139468'
+              style={{
+                width: '100%',
+                height: '300px',
+                border: 'none',
+              }}
+              title='PAC Reviews'
+            ></iframe>
           </div>
-        </div> */}
+        </div>
       </section>
     </>
   );
