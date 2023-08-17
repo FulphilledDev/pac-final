@@ -5,6 +5,8 @@ import BioDuoPhoto from '../../assets/images/BioDuoPhoto.png';
 import MilitaryLogos from './MilitaryLogos/MilitaryLogos';
 import emailjs from '@emailjs/browser';
 
+import './Home.css';
+
 const Home = () => {
   const form = useRef();
 

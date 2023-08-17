@@ -5,7 +5,6 @@ import ContactForm from '../ContactForm/ContactForm';
 
 const NavBar = () => {
   const LINKS = [
-    { name: 'HOME', link: '/' },
     { name: 'PLANS', link: '/plans' },
     { name: 'SERVICES', link: '/services' },
     // { name: 'TEAM', link: '/team' },
@@ -20,17 +19,19 @@ const NavBar = () => {
     >
       <div className='md:flex items-center relative justify-between bg-black py-1'>
         <div
-          className='font-bold text-2xl text-white cursor-pointer flex items-center gap-3'
+          className='font-bold text-2xl text-white flex items-center gap-3 company-name pl-8 md:pl-0'
           style={{ zIndex: 999 }}
         >
-          <h3 className='font-bold'>
-            {/* <FlagIcon className='h-8 w-8' /> */}
-            PATRIOT AIR
-          </h3>
+          <Link to='/' className='hover:text-blue-400 duration-500'>
+            <h3 className='font-bold'>
+              {/* <FlagIcon className='h-8 w-8' /> */}
+              PATRIOT AIR
+            </h3>
+          </Link>
         </div>
         <div
           onClick={() => setOpen(!open)}
-          className='h-4 w-4 md:h-8 md:w-8 absolute right-10 top-8 cursor-pointer md:hidden text-white'
+          className='h-4 w-4 md:h-8 md:w-8 absolute right-10 top-3 cursor-pointer md:hidden text-white'
           style={{ zIndex: 9999 }}
         >
           {open ? <XMarkIcon /> : <WrenchIcon />}
