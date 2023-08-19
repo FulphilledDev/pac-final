@@ -7,6 +7,9 @@ import emailjs from '@emailjs/browser';
 
 import './Home.css';
 
+const emailService = 'service_20jrp3g';
+const emailTemplate = 'template_39th1bn';
+
 const Home = () => {
   const form = useRef();
 
@@ -14,12 +17,7 @@ const Home = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm(
-        'service_7fj3cqr',
-        'template_pg893fq',
-        form.current,
-        '8t1W3IJI0Qyof7Cnd'
-      )
+      .sendForm(emailService, emailTemplate, form.current, 'KfREr6WUC3PWiP7fO')
       .then(
         (result) => {
           console.log(result.text);
@@ -79,7 +77,7 @@ const Home = () => {
           <div className='w-full text-white'>
             <div className='flex flex-col flex-none items-center'>
               <div className='w-full px-0 md:px-2 py-3 flex flex-col items-center'>
-                <div className='flex flex-col items-center p-1'>
+                <div className='flex flex-col items-center p-1' id='contact'>
                   <h4 className='text-start font-extrabold uppercase'>
                     Let's Talk about it
                   </h4>
@@ -124,6 +122,16 @@ const Home = () => {
                       type='text'
                       // id='lastName'
                       name='from_lastName'
+                      required
+                    />
+                  </div>
+                  <div className='col-span-8 lg:col-span-6 flex flex-col '>
+                    <label htmlFor=''>Address</label>
+                    <input
+                      className='text-black px-3 py-2 border-2 border-white focus:outline-none focus:border-blue-600 focus:ring-blue-600'
+                      type='text'
+                      // id='lastName'
+                      name='address'
                       required
                     />
                   </div>

@@ -74,7 +74,7 @@ const PLANS = [
 
 const Plans = () => {
   return (
-    <div className='w-full md:w-3/4 mx-auto px-6 md:px-0 grid grid-cols-8 lg:grid-cols-12'>
+    <div className='w-full md:w-3/4 mx-auto md:px-6 md:px-0 grid grid-cols-8 lg:grid-cols-12'>
       {PLANS.map((plan) => (
         <>
           {/* <SwiperSlide key={plan.id}> */}

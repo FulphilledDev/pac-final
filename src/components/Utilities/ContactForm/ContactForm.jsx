@@ -20,10 +20,10 @@ export default function BasicModal(props) {
 
     emailjs
       .sendForm(
-        'service_7fj3cqr',
-        'template_pg893fq',
+        'service_20jrp3g',
+        'template_39th1bn',
         form.current,
-        '8t1W3IJI0Qyof7Cnd'
+        'KfREr6WUC3PWiP7fO'
       )
       .then(
         (result) => {
@@ -100,6 +100,16 @@ export default function BasicModal(props) {
                         type='text'
                         // id='lastName'
                         name='from_lastName'
+                        required
+                      />
+                    </div>
+                    <div className='col-span-8 md:col-span-4 flex flex-col '>
+                      <label htmlFor=''>Address</label>
+                      <input
+                        className='px-3 py-2 border-2 border-black focus:outline-none focus:border-blue-600 focus:ring-blue-600'
+                        type='text'
+                        // id='lastName'
+                        name='address'
                         required
                       />
                     </div>
