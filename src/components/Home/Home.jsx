@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
 import Logo from '../../assets/images/Logo.png';
-// import LogoAni from '../../assets/images/LogoAni.mp4';
 import BioDuoPhoto from '../../assets/images/BioDuoPhoto.png';
 import MilitaryLogos from './MilitaryLogos/MilitaryLogos';
 import emailjs from '@emailjs/browser';
@@ -34,12 +33,6 @@ const Home = () => {
         <div className='w-full'>
           <div className='min-h-screen'>
             <img src={Logo} className='w-full h-full' alt='Logo' />
-            {/* <video autoplay='true' loop='true'>
-              <source
-                src='../../assets/images/LogoAni.mp4'
-                type='video/mp4'
-              ></source>
-            </video> */}
           </div>
 
           <div className='flex flex-col gap-4'>
@@ -52,7 +45,7 @@ const Home = () => {
                   </p>{' '}
                   craftsmanship.
                 </p>
-                {/* Steven Biography goes here */}
+                {/* CEO Biography goes here */}
                 <p className='text-white text-center mt-0 md:mt-4 px-4 md:px-8 w-full md:w-3/4 mx-auto'>
                   We have nothing to sell you. We tailor our services to and
                   develop a candid relationship with you to save you more time
@@ -73,7 +66,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className='w-full mx-3 md:mx-auto lg:w-4/5 mb-12'>
+        <hr style={{ color: 'white', border: '2px solid white' }}></hr>
+
+        <div className='w-full mx-3 md:mx-auto lg:w-4/5 mb-12 mt-12'>
           <div className='w-full text-white'>
             <div className='flex flex-col flex-none items-center'>
               <div className='w-full px-0 md:px-2 py-3 flex flex-col items-center'>
@@ -89,10 +84,6 @@ const Home = () => {
                     We look forward to hearing from you!
                   </p>
                 </div>
-                {/* <ContactFormPage
-                  closeContactForm={handleClose}
-                  onFormSubmit={sendEmail}
-                /> */}
                 <form
                   ref={form}
                   className='mt-8 px-1 py-2 grid grid-cols-8 lg:grid-cols-12 gap-4 w-4/5 lg:w-full xl:w-4/5'
@@ -154,7 +145,7 @@ const Home = () => {
                       required
                     />
                   </div>
-                  <div className='col-span-8 lg:col-span-6 flex flex-col lg:col-start-3 lg:col-end-11'>
+                  <div className='col-span-8 lg:col-span-6 flex flex-col'>
                     <label htmlFor=''>Subject</label>
                     <select
                       className='text-black px-3 py-2.5 border-2 border-white focus:outline-none focus:border-blue-600 focus:ring-blue-600'
@@ -204,11 +195,12 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <hr style={{ color: 'white', border: '2px solid white' }}></hr>
         <div
-          className='bg-white mt-0 md:py-8'
+          className='bg-black mt-0 md:py-8'
           style={{ maxWidth: '1100px', margin: 'auto' }}
         >
-          <h2 className='text-center pt-8 text-black text-3xl md:text-5xl underline uppercase font-extrabold mb-4 md:mb-8'>
+          <h2 className='text-center pt-8 text-white text-4xl md:text-5xl uppercase font-extrabold mb-4 md:mb-8'>
             Our Reputation
           </h2>
           <div style={{ padding: '10px' }}>
@@ -216,13 +208,16 @@ const Home = () => {
               src='https://widget.taggbox.com/139468'
               style={{
                 width: '100%',
-                height: '300px',
+                height: '350px',
                 border: 'none',
+                overflow: 'none',
+                backgroundColor: 'black',
               }}
-              title='PAC Reviews'
+              title='PAC Yelp Reviews'
             ></iframe>
           </div>
         </div>
+        <hr style={{ color: 'white', border: '2px solid white' }}></hr>
       </section>
     </>
   );

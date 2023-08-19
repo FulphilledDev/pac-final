@@ -67,10 +67,6 @@ export default function BasicModal(props) {
                       We look forward to hearing from you!
                     </p>
                   </div>
-                  {/* <ContactFormPage
-                  closeContactForm={handleClose}
-                  onFormSubmit={sendEmail}
-                /> */}
                   <form
                     ref={form}
                     className='mt-8 px-1 py-2 grid grid-cols-8 lg:grid-cols-12 gap-4 w-full'
