@@ -73,9 +73,9 @@ const Home = () => {
             <div className='flex flex-col flex-none items-center'>
               <div className='w-full px-0 md:px-2 py-3 flex flex-col items-center'>
                 <div className='flex flex-col items-center p-1' id='contact'>
-                  <h4 className='text-start font-extrabold uppercase'>
+                  <h2 className='text-start font-extrabold uppercase'>
                     Let's Talk about it
-                  </h4>
+                  </h2>
 
                   <p className='hidden md:block w-full text-center px-2 py-3 border-2 border-white mt-4'>
                     <span>NOTE:</span> If we don't get back to you within 24
@@ -99,7 +99,7 @@ const Home = () => {
                   <div className='col-span-8 lg:col-span-6 flex flex-col '>
                     <label htmlFor=''>First Name</label>
                     <input
-                      className='text-black px-3 py-2 border-2 border-white focus:outline-none focus:border-blue-600 focus:ring-blue-600'
+                      className='text-black px-3 py-2 border-2 border-white shadow-lg shadow-slate-600 shadow-inner border-none rounded-md focus:outline-none focus:shadow-blue-600 focus:ring-blue-600'
                       type='text'
                       // id='firstName'
                       name='from_firstName'
@@ -109,7 +109,7 @@ const Home = () => {
                   <div className='col-span-8 lg:col-span-6 flex flex-col '>
                     <label htmlFor=''>Last Name</label>
                     <input
-                      className='text-black px-3 py-2 border-2 border-white focus:outline-none focus:border-blue-600 focus:ring-blue-600'
+                      className='text-black px-3 py-2 border-2 border-white shadow-lg shadow-slate-600 shadow-inner border-none rounded-md focus:outline-none focus:shadow-blue-600 focus:ring-blue-600'
                       type='text'
                       // id='lastName'
                       name='from_lastName'
@@ -119,7 +119,7 @@ const Home = () => {
                   <div className='col-span-8 lg:col-span-6 flex flex-col '>
                     <label htmlFor=''>Address</label>
                     <input
-                      className='text-black px-3 py-2 border-2 border-white focus:outline-none focus:border-blue-600 focus:ring-blue-600'
+                      className='text-black px-3 py-2 border-2 border-white shadow-lg shadow-slate-600 shadow-inner border-none rounded-md focus:outline-none focus:shadow-blue-600 focus:ring-blue-600'
                       type='text'
                       // id='lastName'
                       name='address'
@@ -129,7 +129,7 @@ const Home = () => {
                   <div className='col-span-8 lg:col-span-6 flex flex-col '>
                     <label htmlFor=''>Email</label>
                     <input
-                      className='text-black px-3 py-2 border-2 border-white focus:outline-none focus:border-blue-600 focus:ring-blue-600'
+                      className='text-black px-3 py-2 border-2 border-white shadow-lg shadow-slate-600 shadow-inner border-none rounded-md focus:outline-none focus:shadow-blue-600 focus:ring-blue-600'
                       type='email'
                       name='user_email'
                       required
@@ -138,7 +138,7 @@ const Home = () => {
                   <div className='col-span-8 lg:col-span-6 flex flex-col '>
                     <label htmlFor=''>Phone Number</label>
                     <input
-                      className='text-black px-3 py-2 border-2 border-white focus:outline-none focus:border-blue-600 focus:ring-blue-600'
+                      className='text-black px-3 py-2 border-2 border-white shadow-lg shadow-slate-600 shadow-inner border-none rounded-md focus:outline-none focus:shadow-blue-600 focus:ring-blue-600'
                       type='tel'
                       // id='phoneNumber'
                       name='user_phone'
@@ -148,7 +148,7 @@ const Home = () => {
                   <div className='col-span-8 lg:col-span-6 flex flex-col'>
                     <label htmlFor=''>Subject</label>
                     <select
-                      className='text-black px-3 py-2.5 border-2 border-white focus:outline-none focus:border-blue-600 focus:ring-blue-600'
+                      className='text-black px-3 py-2.5 border-2 border-white shadow-lg shadow-slate-600 shadow-inner border-none rounded-md focus:outline-none focus:shadow-blue-600 focus:ring-blue-600'
                       name='subject'
                       required
                     >
@@ -175,18 +175,18 @@ const Home = () => {
                       </option>
                     </select>
                   </div>
-                  <div className='col-span-8 lg:col-start-3 flex flex-col w-full  py-1  mt-4 focus:outline-none focus:border-blue-600 focus:ring-blue-600'>
+                  <div className='col-span-8 lg:col-start-3 flex flex-col w-full  py-1  mt-4'>
                     <label htmlFor=''>Message</label>
                     <textarea
                       type='text'
-                      className='text-black border-2 border-white w-full mx-auto min-h-1.00 p-2'
+                      className='text-black border-2 shadow-lg shadow-slate-600 shadow-inner border-none rounded-md focus:outline-none focus:shadow-blue-600 w-full mx-auto min-h-1.00 p-2'
                       // id='messageBody'
                       name='message'
                       required
                     ></textarea>
                   </div>
                   <div className='col-span-8 lg:col-start-3 flex flex-row flex-wrap md:flex-nowrap justify-around w-full mt-8 gap-4'>
-                    <button className='contact-form__submit-button  rounded-sm py-1 w-full md:w-96 border-none hover:bg-red-800  bg-red-600 text-white uppercase font-bold'>
+                    <button className='contact-form__submit-button  rounded-sm py-1 w-full md:w-96 border-none shadow-md shadow-red-800 hover:bg-red-700  bg-red-600 text-white uppercase font-bold'>
                       Send it
                     </button>
                   </div>

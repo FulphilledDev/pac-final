@@ -82,7 +82,7 @@ export default function BasicModal(props) {
                     <div className='col-span-8 md:col-span-4 flex flex-col '>
                       <label htmlFor=''>First Name</label>
                       <input
-                        className='px-3 py-2 border-2 border-black focus:outline-none focus:border-blue-600 focus:ring-blue-600'
+                        className='px-3 py-2 border-2 border-black shadow-lg shadow-slate-600 shadow-inner border-none rounded-md focus:outline-none focus:shadow-blue-600 focus:ring-blue-600'
                         type='text'
                         // id='firstName'
                         name='from_firstName'
@@ -92,7 +92,7 @@ export default function BasicModal(props) {
                     <div className='col-span-8 md:col-span-4 flex flex-col '>
                       <label htmlFor=''>Last Name</label>
                       <input
-                        className='px-3 py-2 border-2 border-black focus:outline-none focus:border-blue-600 focus:ring-blue-600'
+                        className='px-3 py-2 border-2 border-black shadow-lg shadow-slate-600 shadow-inner border-none rounded-md focus:outline-none focus:shadow-blue-600 focus:ring-blue-600'
                         type='text'
                         // id='lastName'
                         name='from_lastName'
@@ -102,7 +102,7 @@ export default function BasicModal(props) {
                     <div className='col-span-8 md:col-span-4 flex flex-col '>
                       <label htmlFor=''>Address</label>
                       <input
-                        className='px-3 py-2 border-2 border-black focus:outline-none focus:border-blue-600 focus:ring-blue-600'
+                        className='px-3 py-2 border-2 border-black shadow-lg shadow-slate-600 shadow-inner border-none rounded-md focus:outline-none focus:shadow-blue-600 focus:ring-blue-600'
                         type='text'
                         // id='lastName'
                         name='address'
@@ -112,7 +112,7 @@ export default function BasicModal(props) {
                     <div className='col-span-8 md:col-span-4 flex flex-col '>
                       <label htmlFor=''>Email</label>
                       <input
-                        className='px-3 py-2 border-2 border-black focus:outline-none focus:border-blue-600 focus:ring-blue-600'
+                        className='px-3 py-2 border-2 border-black shadow-lg shadow-slate-600 shadow-inner border-none rounded-md focus:outline-none focus:shadow-blue-600 focus:ring-blue-600'
                         type='email'
                         name='user_email reply_to'
                         required
@@ -121,7 +121,7 @@ export default function BasicModal(props) {
                     <div className='col-span-8 md:col-span-4 flex flex-col '>
                       <label htmlFor=''>Phone Number</label>
                       <input
-                        className='px-3 py-2 border-2 border-black focus:outline-none focus:border-blue-600 focus:ring-blue-600'
+                        className='px-3 py-2 border-2 border-black shadow-lg shadow-slate-600 shadow-inner border-none rounded-md focus:outline-none focus:shadow-blue-600 focus:ring-blue-600'
                         type='tel'
                         // id='phoneNumber'
                         name='user_phone'
@@ -131,7 +131,7 @@ export default function BasicModal(props) {
                     <div className='col-span-8 md:col-span-4 flex flex-col '>
                       <label htmlFor=''>Subject</label>
                       <select
-                        className='px-3 py-2.5 border-2 border-black focus:outline-none focus:border-blue-600 focus:ring-blue-600'
+                        className='px-3 py-2.5 border-2 border-black shadow-lg shadow-slate-600 shadow-inner border-none rounded-md focus:outline-none focus:shadow-blue-600 focus:ring-blue-600'
                         name='subject'
                         required
                       >
@@ -161,22 +161,22 @@ export default function BasicModal(props) {
                         </option>
                       </select>
                     </div>
-                    <div className='col-span-8 lg:col-start-3 flex flex-col w-full  py-1  mt-4 focus:outline-none focus:border-blue-600 focus:ring-blue-600'>
+                    <div className='col-span-8 lg:col-start-3 flex flex-col w-full  py-1  mt-4 '>
                       <label htmlFor=''>Message</label>
                       <textarea
                         type='text'
-                        className='border-2 border-black w-full mx-auto min-h-1.00 p-2'
+                        className='border-2 border-black w-full mx-auto min-h-1.00 p-2 shadow-lg shadow-slate-600 shadow-inner border-none rounded-md focus:outline-none focus:shadow-blue-600 focus:ring-blue-600'
                         // id='messageBody'
                         name='message'
                         required
                       ></textarea>
                     </div>
                     <div className='col-span-8 lg:col-start-3 flex flex-row flex-wrap md:flex-nowrap justify-around w-full mt-8 gap-4'>
-                      <button className='contact-form__submit-button  py-1 w-full md:w-96 border-none hover:bg-black  bg-zinc-800 text-white'>
+                      <button className='contact-form__submit-button  py-1 w-full md:w-96 border-none rounded-md shadow-md shadow-slate-800 hover:bg-black  bg-zinc-800 text-white'>
                         Submit
                       </button>
                       <button
-                        className='contact-form__cancel-button px-2 py-1 w-full md:w-96 border-none hover:bg-red-600  bg-red-500 text-white'
+                        className='contact-form__cancel-button px-2 py-1 w-full md:w-96 border-none rounded-md shadow-md shadow-red-700 hover:bg-red-600  bg-red-500 text-white'
                         onClick={handleClose}
                       >
                         Cancel
