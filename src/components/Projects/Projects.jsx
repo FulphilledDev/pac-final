@@ -6,7 +6,7 @@ const INITIAL_PROJECTS = [
   {
     id: 'pi1',
     projectName: 'projectName',
-    image: 'http://via.placeholder.com/240x360',
+    image: 'https://i.ibb.co/TYkLR9j/res1.jpg',
   },
   {
     id: 'pi2',
