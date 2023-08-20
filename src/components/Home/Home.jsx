@@ -129,7 +129,7 @@ const Home = () => {
                   <div className='col-span-8 lg:col-span-6 flex flex-col '>
                     <label htmlFor=''>Email</label>
                     <input
-                      className='text-black px-3 py-2 border-2 border-black shadow-md shadow-slate-600 border-slate-200 rounded-md focus:outline-none focus:shadow-blue-800 focus:border-blue-800'
+                      className='text-black px-3 py-2 border-2 border-black shadow-md shadow-slate-600 rounded-md focus:outline-none focus:shadow-blue-800 focus:border-blue-800'
                       type='email'
                       name='user_email'
                       required
