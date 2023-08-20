@@ -82,7 +82,7 @@ export default function BasicModal(props) {
                     <div className='col-span-8 md:col-span-4 flex flex-col '>
                       <label htmlFor=''>First Name</label>
                       <input
-                        className='px-3 py-2 border-2 border-black shadow-lg shadow-slate-600 shadow-inner border-none rounded-md focus:outline-none focus:shadow-blue-600 focus:ring-blue-600'
+                        className='px-3 py-2 border-1 border-black shadow-lg shadow-slate-600 shadow-inner border-slate-100 rounded-md focus:outline-none focus:shadow-blue-600 focus:ring-blue-600'
                         type='text'
                         // id='firstName'
                         name='from_firstName'
@@ -92,7 +92,7 @@ export default function BasicModal(props) {
                     <div className='col-span-8 md:col-span-4 flex flex-col '>
                       <label htmlFor=''>Last Name</label>
                       <input
-                        className='px-3 py-2 border-2 border-black shadow-lg shadow-slate-600 shadow-inner border-none rounded-md focus:outline-none focus:shadow-blue-600 focus:ring-blue-600'
+                        className='px-3 py-2 border-1 border-black shadow-lg shadow-slate-600 shadow-inner border-slate-100 rounded-md focus:outline-none focus:shadow-blue-600 focus:ring-blue-600'
                         type='text'
                         // id='lastName'
                         name='from_lastName'
@@ -102,7 +102,7 @@ export default function BasicModal(props) {
                     <div className='col-span-8 md:col-span-4 flex flex-col '>
                       <label htmlFor=''>Address</label>
                       <input
-                        className='px-3 py-2 border-2 border-black shadow-lg shadow-slate-600 shadow-inner border-none rounded-md focus:outline-none focus:shadow-blue-600 focus:ring-blue-600'
+                        className='px-3 py-2 border-1 border-black shadow-lg shadow-slate-600 shadow-inner border-slate-100 rounded-md focus:outline-none focus:shadow-blue-600 focus:ring-blue-600'
                         type='text'
                         // id='lastName'
                         name='address'
@@ -112,7 +112,7 @@ export default function BasicModal(props) {
                     <div className='col-span-8 md:col-span-4 flex flex-col '>
                       <label htmlFor=''>Email</label>
                       <input
-                        className='px-3 py-2 border-2 border-black shadow-lg shadow-slate-600 shadow-inner border-none rounded-md focus:outline-none focus:shadow-blue-600 focus:ring-blue-600'
+                        className='px-3 py-2 border-1 border-black shadow-lg shadow-slate-600 shadow-inner border-slate-100 rounded-md focus:outline-none focus:shadow-blue-600 focus:ring-blue-600'
                         type='email'
                         name='user_email reply_to'
                         required
@@ -121,7 +121,7 @@ export default function BasicModal(props) {
                     <div className='col-span-8 md:col-span-4 flex flex-col '>
                       <label htmlFor=''>Phone Number</label>
                       <input
-                        className='px-3 py-2 border-2 border-black shadow-lg shadow-slate-600 shadow-inner border-none rounded-md focus:outline-none focus:shadow-blue-600 focus:ring-blue-600'
+                        className='px-3 py-2 border-1 border-black shadow-lg shadow-slate-600 shadow-inner border-slate-100 rounded-md focus:outline-none focus:shadow-blue-600 focus:ring-blue-600'
                         type='tel'
                         // id='phoneNumber'
                         name='user_phone'
@@ -131,7 +131,7 @@ export default function BasicModal(props) {
                     <div className='col-span-8 md:col-span-4 flex flex-col '>
                       <label htmlFor=''>Subject</label>
                       <select
-                        className='px-3 py-2.5 border-2 border-black shadow-lg shadow-slate-600 shadow-inner border-none rounded-md focus:outline-none focus:shadow-blue-600 focus:ring-blue-600'
+                        className='px-3 py-2.5 border-1 border-black shadow-lg shadow-slate-600 shadow-inner border-slate-100 rounded-md focus:outline-none focus:shadow-blue-600 focus:ring-blue-600'
                         name='subject'
                         required
                       >
@@ -165,7 +165,7 @@ export default function BasicModal(props) {
                       <label htmlFor=''>Message</label>
                       <textarea
                         type='text'
-                        className='border-2 border-black w-full mx-auto min-h-1.00 p-2 shadow-lg shadow-slate-600 shadow-inner border-none rounded-md focus:outline-none focus:shadow-blue-600 focus:ring-blue-600'
+                        className='w-full mx-auto min-h-1.00 p-2 shadow-lg shadow-slate-600 shadow-inner border-1 border-slate-200 rounded-md focus:outline-none focus:shadow-blue-600 focus:ring-blue-600'
                         // id='messageBody'
                         name='message'
                         required
