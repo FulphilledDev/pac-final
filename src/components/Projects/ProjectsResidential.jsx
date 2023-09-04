@@ -60,16 +60,16 @@ const ProjectsResidential = (props) => {
 
   return (
     <>
-      <div className='flex justify-between w-full md:w-4/5 mx-auto'>
-        <h1 className='text-3xl md:text-5xl font-extrabold flex items-center justify-start'>
+      <div className='grid grid-cols-4  w-full md:w-4/5 mx-auto'>
+        <h1 className='col-span-4 md:col-span-2 text-3xl md:text-5xl font-extrabold flex items-center justify-center md:justify-start'>
           RESIDENTIAL
         </h1>
-        <div>
+        <div className='col-span-4 md:col-span-2 flex justify-center md:justify-end'>
           <button
             onClick={props.onClick}
-            className='flex flex-row items-center px-8 py-4 border-none rounded-md shadow-md shadow-slate-800 hover:bg-black  bg-zinc-700 text-white'
+            className='px-8 py-4 border-none rounded-md shadow-md shadow-slate-800 hover:bg-black  bg-zinc-700 text-white'
           >
-            See Commercial Projects
+            See Commercial
           </button>
         </div>
       </div>

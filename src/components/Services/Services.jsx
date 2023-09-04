@@ -13,12 +13,14 @@ const Services = () => {
         /> */}
         <div className=''>
           <div class='py-6'>
-            <h1 className='font-extrabold text-center'>SERVICES</h1>
+            <h1 className='text-[48px] md:text-[72px] font-extrabold text-center'>
+              SERVICES
+            </h1>
           </div>
           <div className='w-full px-3 md:px-6 grid grid-cols-1 lg:grid-cols-2'>
             <div className='col-span-1'>
               <div className='px-3'>
-                <h3 className='uppercase font-bold underline my-5'>
+                <h3 className='text-center md:text-start uppercase font-bold underline my-5'>
                   Service & Repairs
                 </h3>
                 <p className='mb-3'>
@@ -38,7 +40,7 @@ const Services = () => {
                 </p>
               </div>
               <div className='px-3'>
-                <h3 className='uppercase font-bold underline my-5'>
+                <h3 className='text-center md:text-start uppercase font-bold underline my-5'>
                   Installation
                 </h3>
                 <p className='mb-3'>
@@ -95,7 +97,7 @@ const Services = () => {
                 </div>
               </div>
               <div className='px-3'>
-                <h3 className='uppercase font-bold underline my-5'>
+                <h3 className='text-center md:text-start uppercase font-bold underline my-5'>
                   Air Conditioning
                 </h3>
                 <p className='mb-3'>
@@ -113,7 +115,7 @@ const Services = () => {
                 </p>
               </div>
               <div className='px-3'>
-                <h3 className='uppercase font-bold underline my-5'>
+                <h3 className='text-center md:text-start uppercase font-bold underline my-5'>
                   CUSTOM JOBS
                 </h3>
                 <p className='mb-3'>
@@ -136,7 +138,7 @@ const Services = () => {
             </div>
             <div className='col-span-1'>
               <div className='px-3'>
-                <h3 className='uppercase font-bold underline my-5'>
+                <h3 className='text-center md:text-start uppercase font-bold underline my-5'>
                   Maintenance
                 </h3>
                 <p className='mb-3'>
@@ -262,7 +264,7 @@ const Services = () => {
                   </div>
                 </div>
                 <div className='px-3'>
-                  <h3 className='uppercase font-bold underline my-5'>
+                  <h3 className='text-center md:text-start uppercase font-bold underline my-5'>
                     Education
                   </h3>
                   <p className='mb-3'>

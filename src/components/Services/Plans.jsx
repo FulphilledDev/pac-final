@@ -74,12 +74,12 @@ const PLANS = [
 
 const Plans = () => {
   return (
-    <div className='w-full md:w-3/4 mx-auto md:px-6 md:px-0 grid grid-cols-8 lg:grid-cols-12'>
+    <div className='w-full md:w-4/5 lg:w-3/4 mx-auto px-4 grid grid-cols-1 xl:grid-cols-2 xl:gap-4'>
       {PLANS.map((plan) => (
         <>
           {/* <SwiperSlide key={plan.id}> */}
           <div
-            className='col-span-8 lg:col-span-6 px-3 md:px-6 mt-3 py-3 bg-white mx-6'
+            className='col-span-1 px-2 mx-1 md:mx-auto md:px-4 lg:px-6 mt-3 py-3 bg-white'
             key={plan.id}
           >
             <div className='w-full'>

@@ -73,7 +73,7 @@ const Home = () => {
             <div className='flex flex-col flex-none items-center'>
               <div className='w-full px-0 md:px-2 py-3 flex flex-col items-center'>
                 <div className='flex flex-col items-center p-1' id='contact'>
-                  <h2 className='text-start font-extrabold uppercase'>
+                  <h2 className='text-center md:text-start font-extrabold uppercase'>
                     Let's Talk about it
                   </h2>
 

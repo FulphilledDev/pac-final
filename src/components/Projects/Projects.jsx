@@ -19,7 +19,9 @@ const Projects = () => {
   return (
     <section className='bg-white w-full md:w-3/4 mx-auto my-0'>
       <div className='text-black flex flex-col items-center py-8 gap-4'>
-        <h1 className=' font-extrabold'>OUR PROJECTS</h1>
+        <h1 className='text-[48px] md:text-[72px] font-extrabold'>
+          OUR PROJECTS
+        </h1>
         <p className='text-center w-full md:w-3/4 mx-4 md:mx-0 px-4 md:px-0 uppercase'>
           Efficient. Clean. Durable.
         </p>
