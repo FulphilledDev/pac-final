@@ -114,7 +114,7 @@ export default function BasicModal(props) {
                       <input
                         className='px-3 py-2 border-2 border-black shadow-lg shadow-slate-600 rounded-md focus:outline-none focus:shadow-blue-800 focus:border-blue-800'
                         type='email'
-                        name='user_email reply_to'
+                        name='user_email'
                         required
                       />
                     </div>
