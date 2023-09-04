@@ -48,7 +48,7 @@ export default function BasicModal(props) {
         aria-describedby='modal-modal-description'
       >
         <div className='h-full flex items-center justify-center overflow-y-auto'>
-          <Box className='top-4 relative bg-white border-2 border-black p-4 mx-8 lg:mx-auto shadow-md w-full lg:w-[75%] xl:w-[50%]'>
+          <Box className='top-44 lg:top-2 relative bg-white border-2 border-black p-4 mx-8 md:mb-0 lg:mx-auto shadow-md w-full lg:w-[75%] xl:w-[50%]'>
             <div className='w-full'>
               <div className='flex flex-col flex-none items-center'>
                 <div className='w-full px-0 md:px-2 py-3 flex flex-col items-center'>
