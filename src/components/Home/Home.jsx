@@ -195,7 +195,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {/* <hr style={{ color: 'white', border: '2px solid white' }}></hr>
+        <hr style={{ color: 'white', border: '2px solid white' }}></hr>
         <div
           className='bg-black mt-0 md:py-8'
           style={{ maxWidth: '1100px', margin: 'auto' }}
@@ -216,7 +216,7 @@ const Home = () => {
               title='PAC Yelp Reviews'
             ></iframe>
           </div>
-        </div> */}
+        </div>
         <hr style={{ color: 'white', border: '2px solid white' }}></hr>
       </section>
     </>
